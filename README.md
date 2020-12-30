@@ -1,6 +1,8 @@
 # @simple-cdk-constructs/queue-with-dlq
 
-[ci badges here]
+![CI Tests](https://github.com/cdk-constructs/queue-with-dlq/workflows/CI%20Tests/badge.svg?branch=main)
+![Package Audit](https://github.com/cdk-constructs/queue-with-dlq/workflows/Package%20Audit/badge.svg?branch=main)
+
 
 It's rare I've ever created an SQS Queue without a DLQ. This construct will create both the queue and DLQ.
 
