@@ -16,9 +16,9 @@
     "watch": "tsc -w",
     "test": "jest",
     "check-package-files": "npm pack && tar -xvzf *.tgz && rm -rf package *.tgz",
-    "release:major": "npm version major -m \"Version %s.\"",
-    "release:minor": "npm version minor -m \"Version %s.\"",
-    "release:patch": "npm version patch -m \"Version %s.\"",
+    "release:major": "npm version major -m \"[MAJOR] Version %s.\"",
+    "release:minor": "npm version minor -m \"[MINOR] Version %s.\"",
+    "release:patch": "npm version patch -m \"[PATCH] Version %s.\"",
     "preversion": "npm install && npm build && npm test",
     "postversion": "git push && git push --tags"
   },
