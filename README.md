@@ -34,3 +34,16 @@ export class ExampleStack extends Stack {
   }
 }
 ```
+
+## Additional Options
+You can additionally configure the below options which will be applied to both the main queue props and DLQ props:
+
+```typescript
+export interface QueueWithDLQProps {
+  name: string;
+  retentionPeriod?: Duration;
+  visibilityTimeout?: Duration;
+  receiveMessageWaitTime?: Duration;
+  deliveryDelay?: Duration;
+}
+```
