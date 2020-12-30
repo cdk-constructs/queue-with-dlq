@@ -1,10 +1,10 @@
 {
-  "name": "@INSERT_SCOPE/INSERT_PACKAGE",
+  "name": "@simple-cdk-constructs/queue-with-dlq",
   "publishConfig": {
     "access": "public",
     "directory": "src"
   },
-  "repository": "https://github.com/INSERT_REPO_HERE",
+  "repository": "https://github.com/cdk-constructs/queue-with-dlq",
   "version": "0.1.0",
   "files": [
     "/lib"
@@ -34,6 +34,7 @@
     "@aws-cdk/core": "1.80.0"
   },
   "dependencies": {
+    "@aws-cdk/aws-sqs": "^1.80.0",
     "@aws-cdk/core": "1.80.0"
   }
 }
