@@ -1,0 +1,21 @@
+name: Package Audit
+
+on:
+  schedule:
+    - cron: "0 0 * * 1"
+
+  workflow_dispatch:
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    
+    strategy:
+      matrix:
+        node-version: [14.x, 15.x, 16.x]
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Audit Packages
+        run: npm audit
